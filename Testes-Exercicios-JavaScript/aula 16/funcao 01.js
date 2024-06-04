@@ -1,8 +1,11 @@
 function parimp(n) {
-    if (n%2 == 0) {
-        return 'Par!'
+    if (n < 0) {
+        return "ERRO"
+    } else if (n % 2 == 0) {
+        return "É Par"
     } else {
-        return 'Ímpar!'
+        return "É Ímpar"
     }
 }
-console.log(parimp(2))
+
+console.log(parimp(0))
